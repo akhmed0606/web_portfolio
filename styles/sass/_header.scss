@@ -1,0 +1,26 @@
+header {
+    background-image: url(../assets/backgroundHeader.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+  }
+  
+  .headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navBar {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: aliceblue;
+    
+  }
+  .navBar a{
+    transition: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+  }
