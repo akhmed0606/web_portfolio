@@ -274,3 +274,117 @@ header {
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
 }
+
+.navBar a:before,
+.navBar a:after {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 10px auto;
+  position: relative;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  width: 0;
+}
+
+.navBar a:hover:after,
+.navBar a:hover:before,
+.navBar a:focus:after,
+.navBar a:focus:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: width 200ms ease-in-out;
+  transition: width 200ms ease-in-out;
+  width: 105%;
+}
+
+.navBar a:hover:before
+.navBar a:focus:before {
+  bottom: auto;
+  top: 0;
+  width: 105%;
+}
+
+.headerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10%;
+  width: 50%;
+  line-height: 2.4rem;
+  margin-top: -3%;
+}
+
+.headerText h1 {
+  margin: 5% 0%;
+}
+
+.headerText h2 {
+  text-transform: none;
+  margin: 2% 0;
+  font-size: 2rem;
+}
+
+.headerPortrait {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerPortrait img {
+  width: 100%;
+  margin-left: -20%;
+  margin-bottom: -.5%;
+}
+
+.linkContainer a {
+  letter-spacing: 5px;
+  font-size: 1rem;
+}
+
+.linkContainer a::before,
+.linkContainer a::after {
+  content: "|";
+  height: auto;
+  opacity: .4;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  position: relative;
+}
+
+.linkContainer a:hover:before, .linkContainer a:hover:after {
+  opacity: .9;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.linkContainer a:focus:before, .linkContainer a:focus:after {
+  opacity: .9;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
