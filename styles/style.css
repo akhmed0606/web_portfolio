@@ -627,6 +627,7 @@ header {
 .portfolio {
   margin-top: 2%;
   margin-bottom: 3%;
+  text-align: center;
 }
 
 .projectList {
@@ -639,7 +640,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  padding: 0% 2%;
+  padding: 0% 1%;
 }
 
 .projectOne,
@@ -653,17 +654,25 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 40px;
-  width: 60%;
+  width: 58%;
 }
 
 .projectOne img,
 .projectFour img {
-  -o-object-fit: fit;
-     object-fit: fit;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   height: 100%;
   -webkit-box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 
 .projectOne img:hover,
@@ -684,7 +693,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 48%;
+  width: 38%;
 }
 
 .projectTwo img,
@@ -695,6 +704,14 @@ header {
   height: 100%;
   -webkit-box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 
 .projectTwo img:hover,
@@ -705,44 +722,86 @@ header {
           box-shadow: rgba(149, 157, 165, 0.8) 0px 8px 24px;
 }
 
-h4 {
+.overlay {
+  visibility: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  color: white;
+  margin: 0 auto;
+  height: 400px;
+  padding: 5%;
+  opacity: 0;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.overlay h4 {
   color: white;
 }
 
-a {
+.overlay a {
   text-transform: uppercase;
   padding: 2% 7%;
   border: 1px solid aliceblue;
   overflow: hidden;
   position: relative;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
-a::after {
+.overlay a::after {
   background: #fff;
   content: "";
   height: 155px;
   left: -75px;
-  opacity: .2;
+  opacity: 0.2;
   position: absolute;
   top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   width: 35px;
   z-index: 10;
 }
 
-.fa-times {
+.overlay a:hover:after,
+.overlay a:focus:after {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.overlay .fa-times {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-size: larger;
 }
 
-.fa-times:hover,
-.fa-times:focus {
+.overlay .fa-times:hover,
+.overlay .fa-times:focus {
   color: #e3bd6a;
 }
 
-.projectButton {
+.overlay .projectButton {
   background-color: transparent;
-  padding: 3;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -750,13 +809,18 @@ a::after {
   width: 100%;
 }
 
-.linkBox {
-  width: 90%;
+.overlay .linkBox {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 5% 5%;
+  margin: 5% 0%;
+}
+
+.overlay .active {
+  visibility: visible;
+  opacity: 1;
 }
