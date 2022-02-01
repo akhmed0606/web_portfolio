@@ -504,6 +504,100 @@ header {
   font-size: 1.3rem;
 }
 
+.mobileNav {
+  display: none;
+}
+
+.mobileNav .menuOpen {
+  position: absolute;
+  top: 3%;
+  left: 85%;
+  padding: 0;
+  background-color: transparent;
+}
+
+.mobileNav .bar {
+  width: 30px;
+  height: 4px;
+  background-color: aliceblue;
+  margin: 6px;
+}
+
+.mobileNav button:hover .bar,
+.mobileNav button:focus .bar {
+  background-color: #e3bd6a;
+}
+
+.navBarMobile {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  top: -3%;
+  left: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 20;
+  color: aliceblue;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+}
+
+.navBarMobile li {
+  font-size: 1.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -3%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20%;
+  width: 100%;
+  border: 1px solid rgba(240, 248, 255, 0.342);
+}
+
+.navBarMobile li:hover {
+  background-color: rgba(20, 20, 20, 0.95);
+}
+
+.menuClose {
+  position: absolute;
+  font-size: 2rem;
+  top: 4%;
+  right: 5%;
+}
+
+.closed {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+  height: 95vh;
+}
+
 .skillsContent {
   text-align: center;
   padding: 5%;
