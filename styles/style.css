@@ -595,7 +595,7 @@ header {
 .open {
   visibility: visible;
   opacity: 1;
-  height: 95vh;
+  height: 100vh;
 }
 
 .skillsContent {
@@ -1119,7 +1119,7 @@ footer {
 
 @media (max-width: 680px) {
   header {
-    background-image: url(/assets/headerBackgroundMobile.svg);
+    background-image: url(https://raw.githubusercontent.com/akhmed0606/web_portfolio/de1005eafe7c3d5e9b96bd3c938815ab42763d1a/assets/headerBackgroundMobile.svg);
     overflow-x: hidden;
   }
   h2 {
