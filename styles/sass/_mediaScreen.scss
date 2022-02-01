@@ -1,0 +1,167 @@
+@media (max-width: 1000px) {
+    .navBar {
+      width: 60%;
+    }
+    .buttonContainer {
+      flex-wrap: wrap;
+      a {
+        flex-grow: 1;
+        text-align: center;
+      }
+    }
+  }
+  
+  @media (max-width: 940px) {
+    .wrapper {
+      padding: 0;
+    }
+    .headerText h1 {
+      font-size: 1.9rem;
+    }
+    .headerText h2 {
+      font-size: 1.4rem;
+    }
+    .headerPortrait {
+      padding-left: 2%;
+    }
+    .headerNav {
+      display: none;
+    }
+    .mobileNav {
+      display: flex;
+    }
+    .skills {
+      padding: 5% 0%;
+    }
+    footer {
+      margin: 0;
+      padding: 1%;
+    }
+    
+}
+  
+  
+  @media (max-width: 800px) {
+    p {
+      font-size: .85rem
+    };
+  }
+  
+  @media (max-width: 680px) {
+    header {
+      background-image: url(/assets/headerBackgroundMobile.svg);
+      overflow-x: hidden;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    .headerText {
+      padding: 5% 5%;
+      width: 70%;
+      color: aliceblue;
+      line-height: 1.8rem;
+      h1 {
+        margin-bottom: 2%;
+      }
+      .redText {
+        color: $gold;
+      }
+    };
+    .headerPortrait {
+      align-items: flex-end;
+      width: 58%;
+      margin-right: -10%;
+      overflow-x: hidden;
+    }
+    .iconList {
+      padding: 0;
+    }
+    .iconContainer {
+      width: 50%;
+    }
+    .linkContainer a {
+      font-size: .8rem;
+    }
+    .aboutContent {
+      flex-direction: column;
+    }
+    .aboutPortrait {
+      width: 60%;
+      margin: 0 auto;
+    }
+    .aboutText {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2%;
+    }
+    .projectList {
+      padding: 0;
+      justify-content: center;
+    }
+    .projectOne,
+    .projectTwo,
+    .projectThree,
+    .projectFour {
+      width: 95%;
+      margin-bottom: 20px;
+    }
+    
+    
+    .contactForm {
+      width: 100%;
+    }
+    .contactForm .input {
+      width: 100%;
+    }
+    .bottomNavMenu {
+      flex-wrap: wrap;
+      height: 400px;
+      padding-bottom: 3%;
+      li {
+        width: 50%;
+        align-items: center;
+        margin-bottom: 3%;
+        h3 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .headerText h2 {
+      display: none;
+    }
+    .headerPortrait {
+      width: 85%;
+      margin-right: -45%;
+    }
+    .mobileNav label {
+      left: 85%;
+    }
+    .menuClose {
+      right: 9%;
+    }
+    .bottomNavMenu {
+      height:550px;
+      li {
+        width: 100%;;
+      }
+    }
+    .projectOne,
+    .projectTwo,
+    .projectThree,
+    .projectFour {
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+    .overlay {
+      a {
+        padding: 0;
+      }
+    }
+  }
