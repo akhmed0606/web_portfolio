@@ -30,8 +30,23 @@
               </ul> <!-- end of Nav Bar-->
             </nav> <!-- end of headerNav -->
 
+            <nav class='mobileNav'>
+              <button id="menu_label" aria-label="Main menu" class="menuOpen" tabindex="0">
+                <div class="bar One"></div>
+                <div class="bar Two"></div>
+                <div class="bar Three"></div>
+              </button>
+              <ul class="navBarMobile closed">
+                <i class="fas fa-times menuClose" tabindex="0"></i>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul> <!-- end of Nav Bar-->
+            </nav> <!--end of MobileNav-->
+
             <div class="headerContent">
-                <div class="headerText" >
+                <div class="headerText" data-aos="fade-down" data-aos-delay="250">
                   <h1>Hello! I'm Akhmed Nalgiev</h1>
                   <h2>Front-End Developer
                   </h2>
@@ -44,7 +59,7 @@
                   </div> <!--end of link container-->
                 </div> <!-- end of headerText-->
         
-                <div class="headerPortrait">
+                <div class="headerPortrait"  data-aos="fade-left" data-aos-delay="200">
                   <img src="./assets/AkhmedHeaderPortrait.svg" alt="Vector Drawing of Me!">
                 </div> <!-- end of headerPortrait-->
               </div> <!-- end of headerContent--> <!-- end of headerPortrait-->
@@ -57,7 +72,7 @@
             <section class='skills'>
               <div class="skillsContent wrapper" >
                 <h2>Skills</h2>
-                <ul class="iconList">
+                <ul class="iconList" data-aos="fade-up" data-aos-delay="100">
                   <li class="iconContainer">
                     <i class="fab fa-cuttlefish" aria-hidden="true"></i>
                     <p>C#</p>
@@ -124,7 +139,7 @@
 
             <section class="about" id="about">
               <div class="aboutContent wrapper">
-                <div class="aboutPortrait">
+                <div class="aboutPortrait"  data-aos="zoom-in" data-aos-delay="300">
                   <img src="./assets/AkhmedHeaderPortrait.svg" alt="Vector Drawing of Akhmed Nalgiev, Again">
                 </div> <!-- end of aboutPortrait-->
                 <div class="aboutText">
@@ -145,12 +160,12 @@
             <section class="portfolio wrapper" id="portfolio">
               <h2>Portfolio</h2>
               <ul class="projectList">
-                <li class="projectOne">
+                <li class="projectOne" data-aos="fade-down" data-aos-delay="200">
                   <button class="projectButton">
                     <img class="projectImage" src="./assets/2.png" alt="Meetup Project displayed on the macbook" >
                   </button>
                   <div class="overlay">
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times closeButton" tabindex="0"></i>
                     <h4>Meetup App</h4>
                     <p>A simple way to meet people. Add your meetup details that you can share and save to favorites</p>
                     <p class="stackUse">JSX | React | CSS | Firebase |</p>
@@ -161,14 +176,14 @@
                   </div><!-- end of overlayOne-->
                 </li> <!--end of projectOne-->
       
-                <li class="projectTwo">
+                <li class="projectTwo" data-aos="fade-down" data-aos-delay="200">
                   <button class="projectButton">
                     <img class="projectImage" src="./assets/1.png" alt="Article app displayed in the mackbook">
                   </button>   
                   <div class="overlay">
-                    <i class="fas fa-times"></i>
-                    <h4>News App</h4>
-                    <p>New York Times article feed with real-time updates that allows to search the latest news.</p>
+                    <i class="fas fa-times closeButton" tabindex="0"></i>
+                    <h4>NY Times News</h4>
+                    <p>New York Times articles feed with real-time updates that allows to search the latest news.</p>
                     <p class="stackUse">JSX | React | CSS | Api |</p>
                     <div class="linkBox">
                       <a href="https://akhmed0606.github.io/news_app/">Live</a>
@@ -177,13 +192,13 @@
                   </div><!-- end of overlay-->
                 </li> <!--end of projectTwo-->
 
-                <li class="projectThree">
+                <li class="projectThree" data-aos="fade-down" data-aos-delay="200">
                   <button class="projectButton">
                     <img class="projectImage" src="./assets/3.png" alt="Sticky notes app displayed on the mackbook">
                   </button>
                   <div class="overlay">
-                    <i class="fas fa-times"></i>
-                    <h4>Sticky Notes App</h4>
+                    <i class="fas fa-times closeButton" tabindex="0"></i>
+                    <h4>Sticky Notes</h4>
                     <p>Allows to create and save virtual sticky notes, with an added sketching feature.</p>
                     <p class="stackUse">JavaScript | HTML | CSS | Local Storage API</p>
                     <div class="linkBox">
@@ -193,12 +208,12 @@
                   </div><!-- end of overlay-->
                 </li> <!--end of projectThree-->
       
-                <li class="projectFour">
+                <li class="projectFour" data-aos="fade-down" data-aos-delay="200">
                   <button class="projectButton">
                     <img class="projectImage" src="./assets/1.png" alt="Hangman displayed on the mackbook">
                   </button>
                   <div class="overlay">
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times closeButton" tabindex="0"></i>
                     <h4>Hangman</h4>
                     <p>Hangman is a game where the player attempts to build a missing word by guessing one letter at a time. After a certain number of incorrect guesses, the game ends and the player loses. The game also ends if the player correctly identifies all the letters of the missing word.</p>
                     <p class="stackUse">JSX | React | Firebase | API</p>
@@ -262,6 +277,9 @@
               <p>Designed and Developed by Akhmed Nalgiev © 2021</p>
             </div> <!-- end of footerContent-->
           </footer> <!-- end of footer-->
-      
+
+          
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script src="./scripts.js"></script>
 </body>
 </html>
