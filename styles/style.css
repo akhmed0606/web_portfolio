@@ -824,3 +824,81 @@ header {
   visibility: visible;
   opacity: 1;
 }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.contact h2 {
+  margin: 0 0 4% 0;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.contactForm .input {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2%;
+}
+
+.contactForm .input input {
+  width: 100%;
+  padding: 15px;
+  border-style: none;
+  border-bottom: 1px solid rgba(47, 79, 79, 0.356);
+  background-color: #ebebeb;
+}
+
+.contactForm label {
+  width: 100%;
+  text-align: left;
+  padding: 1%;
+  font-size: .85rem;
+  color: #153b2c;
+}
+
+.contactForm textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5%;
+  resize: none;
+  border-style: none;
+  padding: 15px;
+  background-color: #ebebeb;
+}
+
+.contactForm button {
+  margin: 0 auto;
+}
