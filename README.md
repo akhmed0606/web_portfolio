@@ -1,4 +1,4 @@
-[![N|Solid](http://aoifeobrien.com/wp-content/uploads/2017/09/AOB-Portfolio.png)](https://akhmed0606.github.io/web_portfolio/)
+[![N|Solid](https://github.com/akhmed0606/web_portfolio/blob/main/assets/AOB-Portfolio%20(1).png?raw=true)](https://akhmed0606.github.io/web_portfolio/)
 
 <br>
 
