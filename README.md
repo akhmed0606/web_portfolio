@@ -1,4 +1,4 @@
-[![N|Solid](https://pngimage.net/wp-content/uploads/2018/06/portfolio-png-5.png)](https://akhmed0606.github.io/web_portfolio/)
+[![N|Solid](http://aoifeobrien.com/wp-content/uploads/2017/09/AOB-Portfolio.png)](https://akhmed0606.github.io/web_portfolio/)
 
 <br>
 
