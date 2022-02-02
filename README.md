@@ -1,4 +1,4 @@
-[![N|Solid](https://thumbs.dreamstime.com/z/portfolio-text-written-over-colorful-background-portfolio-colorful-texture-blocks-118777067.jpg)](https://akhmed0606.github.io/web_portfolio/)
+[![N|Solid](http://aoifeobrien.com/wp-content/uploads/2017/09/AOB-Portfolio.png)](https://akhmed0606.github.io/web_portfolio/)
 
 <br>
 
